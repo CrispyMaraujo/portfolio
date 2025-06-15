@@ -50,7 +50,6 @@ header>h1{
 
 .nav-links{
     display: flex;
-    justify-content: flex-end;
     gap: 30px;
     list-style: none;
     margin: auto;
@@ -170,13 +169,6 @@ div.intro-image{
     transform: scale(1.05);
 }
 
-.project-links {
-    display: flex;
-    justify-content: center;
-    gap: 100px;
-    padding: 5px;
-    margin-top: 5px;
-}
 footer{
     background-color: rgb(2, 2, 9);
     padding: 20px;
