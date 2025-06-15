@@ -46,6 +46,7 @@ header>h1{
     font-size: 2em;
     margin: 0;
     color: #f0f0f0;
+    font-family: "Edu SA Hand", cursive;
 }
 
 .nav-links{
@@ -86,7 +87,7 @@ section.intro>div{
     background-color: rgba(0, 0, 0, 0.8);
     box-shadow: 0 4px 8px rgb(2, 2, 0);
     margin: auto 10px;
-    width: 100%;
+    max-width: 1000px;
     height: 300px;
 }
 
@@ -110,6 +111,67 @@ div.intro-image{
     box-shadow: 0 0 5px #14e7ff;
 }
 
+/* Seção de Contato */
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+.contact-form{
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgb(2, 2, 0);
+    width: 100%;
+    max-width: 600px;
+}
+
+.contact-form input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #f0f0f0;
+}
+
+.contact-form input:focus {
+    outline: none;
+    border: 2px solid #14e7ff;
+}
+
+.contact-form button {
+    background-color: #14e7ff;
+    color: #000;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.contact-form button:hover {
+    background-color: #0fb6d9;
+}
+
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #f0f0f0;
+    resize: vertical;
+}
+.contact-form textarea:focus {
+    outline: none;
+    border: 2px solid #14e7ff;
+}
+
 /* Seção de Projetos */
 
 .project-text{
@@ -127,8 +189,7 @@ div.intro-image{
 }
 
 #calculator-div{
-    max-width: 100%;
-    width: 850px;
+    max-width: 1000px;
     flex-wrap: wrap;
     display: flex;
     justify-content: left;
