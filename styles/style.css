@@ -114,10 +114,14 @@ div.intro-image{
 /* Seção de Contato */
 .container{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
     padding: 20px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 20px;
 }
 .contact-form{
     background-color: rgba(0, 0, 0, 0.8);
@@ -126,6 +130,28 @@ div.intro-image{
     box-shadow: 0 4px 8px rgb(2, 2, 0);
     width: 100%;
     max-width: 600px;
+    height: 350px;
+}
+
+.contact-form-links{
+    text-align: center;
+    margin-bottom: 20px;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px;
+}
+
+.contact-form-links a {
+    color: #14e7ff;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+.contact-form-links a:hover {
+    color: #ffffff;
 }
 
 .contact-form input {
@@ -230,6 +256,14 @@ div.intro-image{
     transform: scale(1.05);
 }
 
+/* Seção de Sobre */
+
+.error {
+    max-width: 700px;
+    text-align: center;
+    margin: 300px auto;
+    padding: 20px;
+}
 footer{
     background-color: rgb(2, 2, 9);
     padding: 20px;
@@ -237,6 +271,7 @@ footer{
     color: #f0f0f0;
     bottom: 0;
     width: 100%;
+    font-size: 0.9rem;
 }
 
 /* Responsividade */
