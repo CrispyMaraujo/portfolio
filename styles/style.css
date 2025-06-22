@@ -236,6 +236,17 @@ div.intro-image{
     padding: 10px;
 }
 
+#toDoListDiv {
+    max-width: 1000px;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 20px;
+    text-align: justify;
+    padding: 10px;
+}
+
 .project-text a{
     color: #14e7ff;
     text-decoration: underline;
@@ -247,6 +258,8 @@ div.intro-image{
 
 
 .project-image {
+    width: 400px;
+    height: 350px;
     border-radius: 12px;
     box-shadow: 0 0 5px #000000;
     transition: transform 0.3s ease;
@@ -272,6 +285,8 @@ footer{
     bottom: 0;
     width: 100%;
     font-size: 0.9rem;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.5);
+    position: relative;
 }
 
 /* Responsividade */
@@ -279,6 +294,7 @@ footer{
 @media (max-width: 1450px) {
     body {
         width: 100%;
+        height: auto;
     }
     header {
         flex-direction: column;
@@ -305,6 +321,20 @@ footer{
     }
     #my-image {
         max-width: 50%;
+    }
+
+    #calculator-div, #login-div, #toDoListDiv {
+        flex-direction: column;
+        align-items: center;
+        max-width: 100%;
+        flex-wrap: wrap;
+    }
+
+    .project-image {
+        width: 70%;
+        height: 70%;
+        flex-direction: column;
+        align-items: center;
     }
 }
 
@@ -357,7 +387,8 @@ footer{
     .project-image {
         flex-direction: column;
         align-items: center;
-        width: 50%;
+        width: 70%;
+        height: 70%;
     }
     .project-text {
         font-size: 1em;
@@ -368,7 +399,7 @@ footer{
         align-items: center;
         gap: 10px;
     }
-    #calculator-div, #login-div {
+    #calculator-div, #login-div, #toDoListDiv {
         flex-direction: column;
         align-items: center;
         max-width: 100%;
