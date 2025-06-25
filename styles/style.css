@@ -270,7 +270,9 @@ div.intro-image{
     gap: 20px;
     text-align: justify;
     padding: 10px;
+    margin-left: 30px;
 }
+
 
 #toDoListDiv {
     max-width: 1000px;
@@ -281,6 +283,29 @@ div.intro-image{
     gap: 20px;
     text-align: justify;
     padding: 10px;
+}
+
+#stopWatchDiv {
+    max-width: 1000px;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 20px;
+    text-align: justify;
+    padding: 10px;
+}
+
+#linkSaplinDiv {
+    max-width: 1000px;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 20px;
+    text-align: justify;
+    padding: 10px;
+    margin-right: 40px;
 }
 
 .project-text a{
@@ -294,7 +319,7 @@ div.intro-image{
 
 
 .project-image {
-    width: 400px;
+    width: 350px;
     height: 350px;
     border-radius: 12px;
     box-shadow: 0 0 5px #000000;
@@ -359,7 +384,7 @@ footer{
         max-width: 50%;
     }
 
-    #calculator-div, #login-div, #toDoListDiv {
+    #calculator-div, #login-div, #toDoListDiv, #stopWatchDiv, #linkSaplinDiv {
         flex-direction: column;
         align-items: center;
         max-width: 100%;
@@ -435,7 +460,7 @@ footer{
         align-items: center;
         gap: 10px;
     }
-    #calculator-div, #login-div, #toDoListDiv {
+    #calculator-div, #login-div, #toDoListDiv, #stopWatchDiv, #linkSaplinDiv {
         flex-direction: column;
         align-items: center;
         max-width: 100%;
